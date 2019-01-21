@@ -168,9 +168,63 @@
 
 // console.log(val);
 
-const firstName = 'William';
-const lastName = 'Miller';
+// const firstName = 'William';
+// const lastName = 'Miller';
+// const age = 25;
+// const str = 'Hello there My name is Kurt';
+// const tags = 'web design,web development,programming';
 
-let val;
-val = firstName + lastName;
-console.log(val);
+// let val;
+// val = firstName + lastName;
+
+// //Concatenation (spacing words)
+// val = firstName + ' ' + lastName;
+
+// //Append (addon)
+// val = 'Kurt ';
+// val += 'Miller';
+
+// val = 'Hello, My name is ' + firstName + ' and i am ' + age;
+
+// //Escaping
+// val = 'That\'s awesome, I can\'t wait'; 
+
+// // length
+// val = firstName.length;
+
+// //concat
+// val = firstName.concat(' ', lastName);
+
+// // Change Case
+// val = firstName.toUpperCase();
+// val = lastName.toLowerCase();
+
+// val = firstName[1];
+
+// //indeOf()
+// val = firstName.indexOf('m');
+// val = firstName.lastIndexOf('l');
+
+// //char at
+// val = firstName.charAt('2');
+// // Get last character
+// val = firstName.charAt(firstName.length - 1);
+
+// //Get substring
+// val = firstName.substring(0, 4);
+
+// //slice
+// val = firstName.slice(0,4);
+// val = firstName.slice(-3);
+
+// //split string to array
+// val = str.split(' ');
+// val = tags.split(',');
+
+// //replace
+// val = str.replace('Kurt', 'Brad');
+
+// //includes()
+// val = str.includes('Hello');
+
+// console.log(val);
