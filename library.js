@@ -167,3 +167,10 @@
 // val = Math.floor(Math.random() * 20 + 1);//Random number between 1 and 20 (whole numbers)
 
 // console.log(val);
+
+const firstName = 'William';
+const lastName = 'Miller';
+
+let val;
+val = firstName + lastName;
+console.log(val);
