@@ -72,3 +72,31 @@
 // const numbers = [1,2,3,4,5]; //set number array
 // numbers.push(6,7,8,9); //pushes numbers and adds to array
 // console.log(numbers);
+
+// Primitive Data types
+// string
+// const name = 'John Doe';
+// //number
+// const age = 45;
+// // boolean
+// const hasKids = true;
+// // null
+// const car = null;
+// // undefined
+// let test;
+// // symbole
+// const sym = Symbol();
+// console.log(typeof name, typeof age, typeof hasKids, typeof car, typeof test, typeof sym);
+
+// Referance Data types
+//Array
+// const hobbies = ['movies', 'music']
+// // object literal
+// const address = {
+//     address1: '29 Beechwood',
+//     city: 'Philadelphia',
+//     state: 'PA',
+//     zipCode: 19355
+// }
+
+// console.log(address);
