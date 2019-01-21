@@ -228,3 +228,282 @@
 // val = str.includes('Hello');
 
 // console.log(val);
+
+// const name = 'Kurt';
+// const age = 25;
+// const job = 'Programmer';
+// const city = 'Philadelphia';
+// let html;
+
+// //Without template strings (es5)
+// html = '<ul><li>Name: ' + name + '</li><li>Age: ' + age + '</li><li>Job: ' + job + '<li>City: ' + city + '</li></ul>';
+
+// html = '<ul>' +
+//        '<li>Name: ' + name + '</li>' +
+//        '<li>Age: ' + age + '</li>' +
+//        '<li>Job: ' + job + '</li>' +
+//        '<li>City: ' + city + '</li>'+
+//        '</ul>';
+
+// function hello(){
+//     return 'hello';
+// }
+// //Template Strings
+// html = `
+//  <ul>
+//     <li>Name: ${name}</li>
+//     <li>Age: ${age}</li>
+//     <li>Job: ${job}</li>
+//     <li>City: ${city}</li>
+//     <li>${2+2}</li>
+//     <li>${hello()}</li>
+//     <li>${age > 30 ? 'Over 30' : ' Under 30'}</li>
+// </ul>
+//  `;
+// document.body.innerHTML = html;
+
+//Create arrays
+// const numbers = [43,56,33,23,44,36,5];
+// const numbers2 = new Array(22,44,33,76,54);
+// const fruit  = ['apple', 'banana', 'organg', 'pear'];
+// // const mixed = [22, 'is', true, undefined, null, {a:1, b:1}, new Date()];
+
+// // console.log(numbers, numbers2, , mixed);
+
+// let val;
+
+// //get array length
+// val = numbers.length;
+// // check if is array
+// val = Array.isArray(numbers);
+// // Get a single value
+// val = numbers[3];
+// val = numbers[0];
+// // instert into array
+// numbers[2] = 100;
+// // find index of value
+// val = numbers.indexOf(36);
+
+//MUTATING ARRAYS
+//add on to end of existing array
+// numbers.push(250);
+// //add on to front of array
+// numbers.unshift(120);
+// //take off from end
+// numbers.pop();
+// //take off from front
+// numbers.shift();
+// //splice out values
+// numbers.splice(1,3);
+// //Reverse
+// numbers.reverse();
+// //End mutating arrays
+
+//concatenate array
+// val = numbers.concat(numbers2);
+
+// //sort array
+// val = fruit.sort();
+// // val = numbers.sort();
+
+// // //user the "compare function"
+// // val = numbers.sort(function(x, y){
+// // return x-y;
+// // });
+// // //reverse sort
+// // val = numbers.sort(function(x, y){
+// //     return y-x;
+// // });
+
+// //Find 
+// function over50(num){
+//     return num > 50;
+// }
+
+// val = numbers.find(over50);
+
+// console.log(numbers);
+// console.log(val);
+
+// const person = {
+//     firstName: 'Kurt',
+//     lastName: 'Miller',
+//     age: 25,
+//     email: 'kurtmilla1994@gmail.com',
+//     hobbies: ['music', 'sports', 'golf'],
+//     address: {
+//         city: 'Philadelphia',
+//         state: 'PA'
+//     },
+//     getBrithYear: function(){
+//         return 2019-this.age;
+//     }
+// }
+
+// let val;
+
+// val = person;
+// //Get specific value
+// val = person.lastName;//prefferred method
+// val = person['firstName'];
+// val = person.age;
+// val = person.hobbies;
+// val = person.address.state;
+// val = person.getBrithYear();
+
+// console.log(val);
+
+// const people = [
+//     {name: 'john', age: 30},
+//     {name: 'Joe', age: 15},
+//     {name: 'Nancy', age: 40},
+// ];
+
+// for(let i = 0; i < people.length; i++){
+//     console.log(people[i].name);
+// }
+
+// /*********************
+// *****DATES AND TIMES**/
+// let val;
+// const today = new Date();
+// let birthday = new Date('1-7-1994 11:30:15');
+// birthday = new Date('January 7 1994');
+// birthday = new Date('1/7/1994');
+
+// val = today.getMonth();//Months are 0 based (January = 0)
+// val = today.getDate(); 
+// val = today.getDay();//Days are 0 based (Sunday = 0)
+// val = today.getFullYear();
+// val = today.getHours();
+// val = today.getMinutes();
+// val = today.getTime();
+
+// birthday.setMonth(2);
+// birthday.setDate(12);
+// birthday.setYear(1999);
+// birthday.setTime(3);
+// birthday.setMinutes(30);
+// birthday.setSeconds(25);
+
+// console.log(birthday);
+// /********END***********
+// ***DATES AND TIMES****/
+
+//SWITCHES faster than if else statements
+// const color = 'blue';
+
+// switch(color){
+//     case 'red':
+//     console.log('Color is Red');
+//     break;
+//     case 'blue':
+//     console.log('Color is Blue');
+//     break;
+//     default:
+//     console.log('Color is not Red or Blue');
+//     break;
+// }
+
+// let day;
+// switch(new Date().getDay()){
+//     case 0:
+//     day = 'sunday';
+//     break;
+//     case 1:
+//     day = 'monday';
+//     break;
+//     case 2:
+//     day = 'Tuesday';
+//     break;
+//     case 3:
+//     day = 'Wednesday';
+//     break;   
+//     case 4:
+//     day = 'Thursday';
+//     break;    
+//     case 5:
+//     day = 'Friday';
+//     break;    
+//     case 6:
+//     day = 'Saturday';
+//     break;
+// }
+
+// console.log(`Today is ${day}`);
+
+//FUCNTION DECLARATION
+// function greet(userName = 'John', lastName = 'Doe'){
+//     //console.log('Hello');
+//     return 'Hello ' + userName + ' ' + lastName; 
+// }
+
+// //console.log(greet());
+// //FUCNTION EXPRESSIONS
+// const square = function(x = 3){
+//     return x*x;
+// };
+
+// //console.log(square());
+
+// //Immidiately invokable function expressions - IIfes
+
+// (function(name){
+//     console.log('Hello '+ name);
+// })('Brad');
+
+//Property Methods
+// const todo = {
+//     add: function(){
+//         console.log('Add todo..');
+//     },
+//     edit: function(id){
+//         console.log(`Edit todo ${id}`);
+//     }
+// }
+
+// todo.delete = function(){
+//     console.log('Delete todo...');
+// }
+
+// todo.add();
+// todo.edit(25);
+// todo.delete();
+
+//LOOPS and ITERATIONS
+//Loop through array
+//  const cars = ['Ford', 'Chevy', 'Dodge', 'Jeep'];
+
+
+// for(let i = 0; i < cars.length; i++){
+//     console.log(cars[i]);
+// }
+
+// FOR EACH()
+// cars.forEach(function(car, index){
+//     console.log(`${index} : ${car}`);
+// });
+
+//MAP
+// const users = [
+//     {id: 1, name: 'John'},
+//     {id: 2, name: 'Sara'},
+//     {id: 3, name: 'Karen'},
+//     {id: 4, name: 'Steve'}
+// ];
+
+// const ids = users.map(function(user){
+//     return user.id;
+// });
+
+// console.log(ids);
+
+// FOR IN LOOP
+// const user = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     age: 40
+// }
+// for(let x in user){
+//     console.log(`${x} : ${user[x]}`);
+// }
