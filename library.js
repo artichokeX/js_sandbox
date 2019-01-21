@@ -100,3 +100,70 @@
 // }
 
 // console.log(address);
+
+
+// // Number to string
+// let val;
+// val = String(555);
+// val = String(4+4);
+// //Boolean to string
+// val = String(true);
+// //Date to string
+// val = String(new Date());
+// // Array
+// val = String([1,2,3,4]);
+
+// // to string method
+// val = (5).toString();
+// val = (true).toString();
+
+// //String to numbers
+// val = Number('5');
+// val = Number(true); //1
+// val = Number(false); //0
+// val = Number(null); //0
+// val = Number('hello'); //NaN (Not a Number)
+
+// //Parse int
+// val = parseInt('100');
+// val = parseFloat('100.30');
+
+// //output
+// console.log(val);
+// console.log(typeof val);
+// //console.log(val.length);
+// console.log(val.toFixed());
+
+//Type Coersion
+// const val1 = String(5);
+// const val2 = 6;
+// const sum = Number(val1 + val2);
+
+// console.log(sum);
+// console.log(typeof sum);
+
+// const num1 = 100;
+// const num2 = 50;
+// let val;
+// //simple Math
+// val = num1 + num2;
+// val = num1 * num2;
+// val = num1 - num2;
+// val = num1 / num2;
+// val = num1 % num2;
+
+// // Math object
+// val = Math.PI;
+// val = Math.E;
+// val = Math.round(2.8);
+// val = Math.ceil(2.4);//round up
+// val = Math.floor(2.9);//round down
+// val = Math.sqrt(64);
+// val = Math.abs(-5);
+// val = Math.pow(8, 2);
+// val = Math.min(2, 33, 64, 1, 99, 8);
+// val = Math.max(-2, 100, 99, 5, 36, 1000);
+// val = Math.random();//prodcues a random number (with decimals)
+// val = Math.floor(Math.random() * 20 + 1);//Random number between 1 and 20 (whole numbers)
+
+// console.log(val);
