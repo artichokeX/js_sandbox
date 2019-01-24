@@ -519,22 +519,22 @@
 //     console.log('NO');
 // }
 
-let Val;
-//OUTER HEiGHT and Width
-val = window.outerHeight;
-val = window.outerWidth;
+// let Val;
+// // //OUTER HEiGHT and Width
+// // val = window.outerHeight;
+// // val = window.outerWidth;
 
 
-// Scroll Points
-val = window.scrollY;
+// // // Scroll Points
+// // val = window.scrollY;
 
-// Location object
-val = window.location;
-val = window.location.hostname;
-val = window.location.search;
+// // // Location object
+// val = window.location;
+// val = window.location.hostname;
+// val = window.location.search;
 
-// //redirect
-// window.location.href = 'http://google.com';
-// //reload
-// window.location.reload();
-console.log(val);
+// // // //redirect
+// // // window.location.href = 'http://google.com';
+// // // //reload
+// // // window.location.reload();
+// console.log(val);
